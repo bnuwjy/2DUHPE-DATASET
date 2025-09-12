@@ -4,10 +4,10 @@ Dataset repository for the paper: **A Large Scale Annotated Dataset and Efficien
 **(insert paper link on arXiv)**
 
 ## Introduction
-A `100K` scale annotated dataset for human pose estimation in underwater scenes, containing **(insert number)** image sequences (frames from videos of swimming) of `male` and `female` swimmers, covering a variety of swimming strokes(`breaststroke`, `freestyle`, `backstroke` and `butterfly`) as well as external environment factors like light condition and water quality.
+A `100K` scale annotated dataset for human pose estimation in underwater scenes, containing 94 image sequences (frames from videos of swimming) of `male` and `female` swimmers, covering a variety of swimming strokes(`breaststroke`, `freestyle`, `backstroke` and `butterfly`) as well as external environment factors like light condition and water quality.
 
 ## Structures
-The main folder `dataset` contains **(insert number)** subfolders named from `1` to **(insert number)**. Each folder contains two subfolders 'images'(video frames of swimming, `jpg` or `png` format) and 'annots'(information about `18 keypoints` and `bounding box` of swimmers' body, in `json` file format) 
+The main folder `dataset` contains 94 subfolders named from `1` to `94`. Each folder contains two subfolders 'images'(video frames of swimming, `jpg` or `png` format) and 'annots'(information about `18 keypoints` and `bounding box` of swimmers' body, in `json` file format) 
 
 ```
 dataset/
@@ -100,9 +100,6 @@ In order to help determine the swimming style and improve the prediction accurac
 ![annotation](assets/annotation.svg)
 
 ## Statistics
-
-The dataset contains **(insert number)** image sequences formed by video frames of swimming. Each video corresponds to a specific stroke. To enrich the gender diversity of the data, we collect data for both male and female swimmers. 
-
 Here we make a detailed information list about swimmer's gender, length, swimming stroke and source of each image sequence. 
 
 | Name | Number of Frames | Swimming Stroke | Gender | Source |
@@ -121,8 +118,8 @@ Here we make a detailed information list about swimmer's gender, length, swimmin
 | 12 | 302 | butterfly | female | online |
 | 13 | 297 | butterfly | female | online |
 | 14 | 519 | freestyle | male | online |
-| 15 | 282 | unknown | male | online |
-| 16 | 272 | unknown | male | online |
+| 15 | 282 | unknown* | male | online |
+| 16 | 272 | unknown* | male | online |
 | 17 | 293 | butterfly | male | online |
 | 18 | 344 | butterfly | male | online |
 | 19 | 501 | butterfly | male | online |
@@ -167,25 +164,44 @@ Here we make a detailed information list about swimmer's gender, length, swimmin
 | 58 | 562 | breaststroke | male | online |
 | 59 | 543 | freestyle | male | online |
 | 60 | 2188 | backstroke | female | offline |
-| 61 | 4090 | breaststroke | female | offline |
-| 62 | 2907 | freestyle | female | offline |
-| 63 | 3310 | backstroke | male | offline |
+| 61 | 1246 | breaststroke | female | offline |
+| 62 | 1188 | freestyle | female | offline |
+| 63 | 1063 | backstroke | male | offline |
 | 64 | 3067 | butterfly | male | offline |
-| 65 | 2020 | breaststroke | male | offline |
+| 65 | 2019 | breaststroke | male | offline |
 | 66 | 2247 | breaststroke | female | offline |
 | 67 | 4982 | breaststroke | female | offline |
-| 68 | 2440 | backstroke | female | offline |
-| 69 | 6967 | breaststroke | female | offline |
-| 70 | 4426 | freestyle | female | offline |
-| 71 | 7552 | backstroke | female | offline |
-| 72 | 1717 | breaststroke | male | offline |
+| 68 | 1174 | backstroke | female | offline |
+| 69 | 1935 | breaststroke | female | offline |
+| 70 | 2173 | freestyle | female | offline |
+| 71 | 5472 | backstroke | female | offline |
+| 72 | 1716 | breaststroke | male | offline |
 | 73 | 1718 | backstroke | female | offline |
 | 74 | 268 | freestyle | male | offline |
 | 75 | 213 | butterfly | female | offline |
-| 76 | 1426 | butterfly | female | offline |
-| 77 | 2566 | freestyle | male | offline |
+| 76 | 1093 | butterfly | female | offline |
+| 77 | 1522 | freestyle | male | offline |
+| 78 | 1629 | breaststroke | female | offline |
+| 79 | 1374 | breaststroke | female | offline |
+| 80 | 2030 | breaststroke | female | offline |
+| 81 | 1276 | breaststroke | female | offline |
+| 82 | 1569 | breaststroke | female | offline |
+| 83 | 1719 | freestyle | female | offline |
+| 84 | 130 | backstroke | male | offline |
+| 85 | 622 | backstroke | male | offline |
+| 86 | 1495 | backstroke | male | offline |
+| 87 | 1266 | backstroke | female | offline |
+| 88 | 595 | freestyle | male | offline |
+| 89 | 301 | freestyle | male | offline |
+| 90 | 148 | freestyle | male | offline |
+| 91 | 333 | butterfly | female | offline |
+| 92 | 114 | backstroke | female | offline |
+| 93 | 1966 | backstroke | female | offline |
+| 94 | 2253 | freestyle | female | offline |
 
-The average length of all image sequences is  **(insert number)** frames, and the standard deviation is **(insert number)** frames. Statistics on stroke, swimmer gender and data source could be seen in the table below. 
+*:We could not figure out the specific swimming stroke in these videos, but we think they are still useful for model training.  
+
+The average length of all image sequences is `1282.84` frames, and the standard deviation is `1328.71` frames. Statistics on stroke, swimmer gender and data source could be seen in the table below. 
 
 ![statistics](assets/statistics.png)
 
