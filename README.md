@@ -7,13 +7,19 @@ Dataset repository for the paper: **A Large Scale Annotated Dataset and Efficien
 A `100K` scale annotated dataset for human pose estimation in underwater scenes, containing 94 image sequences (frames from videos of swimming) of `male` and `female` swimmers, covering a variety of swimming strokes(`breaststroke`, `freestyle`, `backstroke` and `butterfly`) as well as external environment factors like light condition and water quality.
 
 ## Structures
-The main folder `dataset` contains 94 subfolders named from `1` to `94`. Each folder contains two zip files 'images'(video frames of swimming, each of them in `jpg` or `png` format) and 'annots'(information about `18 keypoints` and `bounding box` of swimmers' body, each of them in `json` file format) 
+The main folder `dataset` contains 94 subfolders named from `1` to `94`. Each subfolder contains two secondary subfolders 'images'(video frames of swimming, each of them in `jpg` or `png` format) and 'annots'(information about `18 keypoints` and `bounding box` of swimmers' body, each of them in `json` file format) 
 
 ```
 dataset/
 |--1/
-|  |--images.zip
-|  |--annots.zip
+|  |--images/
+|  |    |--image1.png/jpg
+|  |    |--image2.png/jpg
+|  |    |...
+|  |--annots/
+|  |    |--annot1.json
+|  |    |--annot2.json
+|  |    |...
 |--2/
 |...
 |--94/
