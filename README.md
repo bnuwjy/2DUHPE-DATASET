@@ -153,7 +153,7 @@ Here we make a detailed information list about swimmer's gender, length, swimmin
 | 47 | 631 | butterfly | male | online |
 | 48 | 314 | backstroke | female | online |
 | 49 | 378 | freestyle | male | online |
-| 50 | 256 | backstroke | female | online |
+| 50 | 473 | backstroke | female | online |
 | 51 | 407 | freestyle | female | offline |
 | 52 | 394 | backstroke | female | offline |
 | 53 | 477 | breaststroke | female | offline |
@@ -201,7 +201,7 @@ Here we make a detailed information list about swimmer's gender, length, swimmin
 
 *:We could not figure out the specific swimming stroke in these videos, but we think they are still useful for model training.  
 
-The average length of all image sequences is `1282.84` frames, and the standard deviation is `1328.71` frames. Statistics on stroke, swimmer gender and data source could be seen in the table below. 
+The average length of all image sequences is `1285.15` frames. Statistics on stroke, swimmer gender and data source could be seen in the table below. 
 
 ![statistics](assets/statistics.png)
 
